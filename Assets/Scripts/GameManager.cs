@@ -27,16 +27,29 @@ public class GameManager : MonoBehaviour
     }
 
     public void SelectIngredient(Ingredient ingredient) {
-        Ingredients.Add(ingredient);
+        Ingredient newIngredient = new Ingredient();
+        newIngredient.Name = ingredient.Name;
+        newIngredient.isCorrect = false;
+        Ingredients.Add(newIngredient);
     }
 
-    public void DeselectIngredient(Ingredient ingredient) {
-        Ingredients.Remove(ingredient);
+    public void DeselectIngredient(Ingredient selected) {
+        foreach (Ingredient ingredient in Ingredients) {
+            if (ingredient.Name==selected.Name) {
+                Ingredients.Remove(ingredient);
+            }
+        }
     }
 
     #endregion
 
     #region Create List
+
+    public void StartListCreation() {
+        workingCake = null;
+        Ingredients.Clear();
+        //Show UI
+    }
 
     public List<Cake> Cakes = new List<Cake>();
     Cake workingCake;
@@ -57,6 +70,12 @@ public class GameManager : MonoBehaviour
 
     public Cake ActiveCake;
 
+    public void StartCakeCreation() {
+        PrepareCake();
+        Ingredients.Clear();
+        //UI?
+    }
+
     public void PrepareCake() {
         int rnd = Random.Range(0, Cakes.Count);
         SetActiveCake(Cakes[rnd]);
@@ -68,7 +87,7 @@ public class GameManager : MonoBehaviour
 
     public void CompareCake() {
         Cake currentCake = new Cake(Ingredients);
-        int errors = ActiveCake.Compare(currentCake);
+        int errors = currentCake.Compare(ActiveCake);
 
         if (errors==0) {
             // WIN
