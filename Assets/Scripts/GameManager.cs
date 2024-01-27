@@ -135,13 +135,14 @@ public class GameManager : MonoBehaviour
     public void StoreCake() {
         workingCake = new Cake(Ingredients);
         UIManager.Instance.AllowNext(false);
+        UIManager.Instance.SetChosenCards(workingCake);
+
         Ingredients.Clear();
     }
 
     public void NameCake(string name) {
         workingCake.Name = name;
         //Debug.Log(name);
-
         UIManager.Instance.AllowNext(name.Length>3 && name.Length<20);
 
     }
@@ -178,9 +179,13 @@ public class GameManager : MonoBehaviour
         ActiveCake = cake;
     }
 
+    public Cake currentCake;
+
     public void CompareCake() {
-        Cake currentCake = new Cake(Ingredients);
+        currentCake = new Cake(Ingredients);
         int errors = currentCake.Compare(ActiveCake);
+
+        UIManager.Instance.SetResultCards(currentCake);
 
         if (errors==0) {
             // WIN
