@@ -117,6 +117,7 @@ public class GameManager : MonoBehaviour
 
 
     public void PrepareSettingCake() {
+        workingCake = new Cake(Ingredients);
         UIManager.Instance.ClearTextInput();
         Ingredients.Clear();
         UIManager.Instance.AllowNext(false);
@@ -124,7 +125,6 @@ public class GameManager : MonoBehaviour
     }
 
     void startListCreation(int ingredients=3) {
-        workingCake = null;
         ingredCount = ingredients;
         //Show UI
     }
@@ -134,6 +134,7 @@ public class GameManager : MonoBehaviour
 
     public void StoreCake() {
         workingCake = new Cake(Ingredients);
+
         UIManager.Instance.AllowNext(false);
         UIManager.Instance.SetChosenCards(workingCake);
 
@@ -150,7 +151,6 @@ public class GameManager : MonoBehaviour
     public void CakeNamed() {
         Cakes.Add(workingCake);
         //Debug.Log("NAMED" + workingCake.Name);
-        workingCake = new Cake(Ingredients);
         PrepareMainMenu();
     }
 

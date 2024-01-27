@@ -48,7 +48,7 @@ public class UIManager : MonoBehaviour {
             usedScreens.Add(screen.Name, screen);
         }
 
-        ActivateScreen(1);
+        ActivateScreen(2);
     }
 
     // Start is called before the first frame update
@@ -69,6 +69,7 @@ public class UIManager : MonoBehaviour {
 
     public void ActivateScreen(int screenName) {
         ActivateScreen((ScreenName)screenName);
+        Debug.Log(screenName);
     }
 
     public void ActivateScreen(ScreenName name ) {
@@ -156,7 +157,7 @@ public enum ScreenName {
     empty,
     StartScreen,
     TitleScreen,
-    Credits,
+    Credits, //not yet used
     Player1ScreenPrepare,
     Player1ScreenName,
     Player2Screen,
