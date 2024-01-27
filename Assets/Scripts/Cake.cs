@@ -25,10 +25,15 @@ public class Cake {
     public int Compare(Cake cake) {
         int returnValue = 0;
 
-        foreach (Ingredient ingredient in cake.Ingredients) {
-            if (!Ingredients.Contains(ingredient)) {
-                returnValue++;
+        for (int i = 0; i < Ingredients.Count; i++) {
+            int add = 1;
+            for (int j = 0; j < cake.Ingredients.Count; j++) {
+                if (cake.Ingredients[j].Name== Ingredients[i].Name) {
+                    add = 0;
+                    Ingredients[i].isCorrect = true;
+                }
             }
+            returnValue += add;
         }
         return returnValue;
     }
