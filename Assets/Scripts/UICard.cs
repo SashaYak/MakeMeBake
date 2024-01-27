@@ -34,14 +34,15 @@ public class UICard : MonoBehaviour {
 
     public void Select() {
         Selected = !Selected;
+        if (SelectedIndicator != null) {
+            SelectedIndicator.SetActive(Selected);
+        }
         if (Selected) {
             GameManager.Instance.SelectIngredient(UsedCard.Type);
         } else {
             GameManager.Instance.DeselectIngredient(UsedCard.Type);
         }
-        if (SelectedIndicator!=null) {
-            SelectedIndicator.SetActive(Selected);
-        }
+
     }
 
     public void CheckCorrect() {

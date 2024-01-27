@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
 
 
 
-    public List<Ingredient> Ingredients = new List<Ingredient>();
+    List<Ingredient> Ingredients = new List<Ingredient>();
 
 
 
@@ -84,6 +84,17 @@ public class GameManager : MonoBehaviour
     }
 
     public void DeselectIngredient(Ingredient selected) {
+        List<Ingredient> ingredientsToRemove = new List<Ingredient>();
+        for (int i = 0; i < Ingredients.Count; i++) {
+            if (Ingredients[i].IsEqual(selected)) {
+                ingredientsToRemove.Add(Ingredients[i]);
+            }
+        }
+
+        for (int i = 0; i < ingredientsToRemove.Count; i++) {
+            Ingredients.Remove(ingredientsToRemove[i]);
+        }
+
         foreach (Ingredient ingredient in Ingredients) {
             if (ingredient.IsEqual(selected)) {
                 Ingredients.Remove(ingredient);
@@ -106,6 +117,7 @@ public class GameManager : MonoBehaviour
 
 
     public void PrepareSettingCake() {
+        UIManager.Instance.ClearTextInput();
         Ingredients.Clear();
         UIManager.Instance.AllowNext(false);
         startListCreation(3);
@@ -128,13 +140,16 @@ public class GameManager : MonoBehaviour
 
     public void NameCake(string name) {
         workingCake.Name = name;
+        //Debug.Log(name);
 
-        UIManager.Instance.AllowNext(name.Length>3);
+        UIManager.Instance.AllowNext(name.Length>3 && name.Length<20);
 
     }
 
     public void CakeNamed() {
         Cakes.Add(workingCake);
+        //Debug.Log("NAMED" + workingCake.Name);
+        workingCake = new Cake(Ingredients);
         PrepareMainMenu();
     }
 
@@ -154,6 +169,9 @@ public class GameManager : MonoBehaviour
     void prepareCake() {
         int rnd = Random.Range(0, Cakes.Count);
         SetActiveCake(Cakes[rnd]);
+        Debug.Log(ActiveCake.Name);
+        UIManager.Instance.AllowNext(false);
+        UIManager.Instance.SetCakeName(ActiveCake.Name);
     }
 
     public void SetActiveCake(Cake cake) {
