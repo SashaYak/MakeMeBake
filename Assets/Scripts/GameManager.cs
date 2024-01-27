@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
 
+
     public Card[] Cards;
 
     Dictionary<string, Card> cardDictionary;
@@ -23,6 +24,8 @@ public class GameManager : MonoBehaviour
         foreach (Card card in Cards) {
             cardDictionary.Add(card.Type.Name, card);
         }
+
+        Cakes = new List<Cake>();
     }
 
 
@@ -34,7 +37,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        UIManager.Instance.AllowNext(false);
+        PrepareMainMenu();
     }
 
     // Update is called once per frame
@@ -44,18 +48,39 @@ public class GameManager : MonoBehaviour
     }
 
 
+    #region  Main Menu
+
+    public void PrepareMainMenu() {
+        if (Cakes.Count>0) {
+            UIManager.Instance.AllowNext(true);
+        }
+    }
+
+
+    #endregion
+
+
 
 
     #region Selection
+
+
+
+
     public List<Ingredient> Ingredients = new List<Ingredient>();
 
-    public void Prepare() {
-        Ingredients.Clear();
-    }
+
+
 
     public void SelectIngredient(Ingredient ingredient) {
         Ingredient newIngredient = ingredient.Copy();
         Ingredients.Add(newIngredient);
+
+        if (Ingredients.Count == ingredCount) {
+            UIManager.Instance.AllowNext(true);
+        } else {
+            UIManager.Instance.AllowNext(false);
+        }
     }
 
     public void DeselectIngredient(Ingredient selected) {
@@ -64,28 +89,53 @@ public class GameManager : MonoBehaviour
                 Ingredients.Remove(ingredient);
             }
         }
+        if (Ingredients.Count == ingredCount) {
+            UIManager.Instance.AllowNext(true);
+        } else {
+            UIManager.Instance.AllowNext(false);
+        }
     }
+
 
     #endregion
 
     #region Create List
 
-    public void StartListCreation() {
-        workingCake = null;
+    int ingredCount = 3;
+
+
+
+    public void PrepareSettingCake() {
         Ingredients.Clear();
+        UIManager.Instance.AllowNext(false);
+        startListCreation(3);
+    }
+
+    void startListCreation(int ingredients=3) {
+        workingCake = null;
+        ingredCount = ingredients;
         //Show UI
     }
 
-    public List<Cake> Cakes = new List<Cake>();
+    public List<Cake> Cakes;
     Cake workingCake;
 
     public void StoreCake() {
         workingCake = new Cake(Ingredients);
+        UIManager.Instance.AllowNext(false);
+        Ingredients.Clear();
     }
 
     public void NameCake(string name) {
         workingCake.Name = name;
+
+        UIManager.Instance.AllowNext(name.Length>3);
+
+    }
+
+    public void CakeNamed() {
         Cakes.Add(workingCake);
+        PrepareMainMenu();
     }
 
     #endregion
@@ -96,12 +146,12 @@ public class GameManager : MonoBehaviour
     public Cake ActiveCake;
 
     public void StartCakeCreation() {
-        PrepareCake();
+        prepareCake();
         Ingredients.Clear();
         //UI?
     }
 
-    public void PrepareCake() {
+    void prepareCake() {
         int rnd = Random.Range(0, Cakes.Count);
         SetActiveCake(Cakes[rnd]);
     }
