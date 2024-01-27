@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class UICard : MonoBehaviour {
 
     public CardType Type;
 
     public Image TargetImage;
+    public Button TargetButton;
     public bool Selected = false;
 
     public Card UsedCard;
@@ -16,8 +18,11 @@ public class UICard : MonoBehaviour {
     public GameObject Correct;
     public GameObject Wrong;
 
+
     private void Awake() {
-        Selected = false;
+        TargetImage = this.gameObject.GetComponent<Image>();
+        TargetButton = this.gameObject.GetComponent<Button>();
+        Clear();
     }
 
 
@@ -34,7 +39,9 @@ public class UICard : MonoBehaviour {
         } else {
             GameManager.Instance.DeselectIngredient(UsedCard.Type);
         }
-        SelectedIndicator.SetActive(Selected);
+        if (SelectedIndicator!=null) {
+            SelectedIndicator.SetActive(Selected);
+        }
     }
 
     public void CheckCorrect() {
@@ -46,6 +53,24 @@ public class UICard : MonoBehaviour {
             Wrong.SetActive(true);
         }
     }
+
+    public void Clear() {
+        Selected = false;
+        if (Wrong!=null) {
+            Wrong?.SetActive(false);
+
+        }
+        if (Correct != null) {
+            Correct?.SetActive(false);
+
+        }
+        if (SelectedIndicator != null) {
+            SelectedIndicator?.SetActive(false);
+
+        }
+    }
+
+
 
 
     public enum CardType {

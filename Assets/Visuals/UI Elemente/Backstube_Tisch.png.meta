@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 5807033616722894e8d6764596059538
+guid: 661cd739706fb41a1a7762c42cfeb9fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1861778244092751849
-    second: Fisch_0
-  - first:
-      213: 804341775355123367
-    second: Fisch_1
+      213: 3928014952372409743
+    second: Backstube_Tisch_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,51 +135,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fisch_0
+      name: Backstube_Tisch_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 17
-        width: 1008
-        height: 943
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9efe2b9e27d56d910800000000000000
-      internalID: 1861778244092751849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fisch_1
-      rect:
-        serializedVersion: 2
-        x: 311
         y: 0
-        width: 98
-        height: 12
+        width: 1920
+        height: 553
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a69c064598992b00800000000000000
-      internalID: 804341775355123367
+      spriteID: f859494a9cc138630800000000000000
+      internalID: 3928014952372409743
       vertices: []
       indices: 
       edges: []
@@ -207,8 +170,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fisch_0: 1861778244092751849
-      Fisch_1: 804341775355123367
+      Backstube_Tisch_0: 3928014952372409743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
