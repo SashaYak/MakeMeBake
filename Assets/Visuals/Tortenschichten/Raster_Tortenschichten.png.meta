@@ -169,7 +169,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Raster_Tortenschichten_0: -8524938297184738164
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

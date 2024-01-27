@@ -169,7 +169,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      JustEat_0: 7919827168558235520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
