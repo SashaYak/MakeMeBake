@@ -1,25 +1,37 @@
 fileFormatVersion: 2
-guid: 45b49463c8b33ca4297e29c71bd206d6
+guid: 0a8bec349a6f7409d8de11b25b5fe14a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3035291967034810854
-    second: Apfel_0
+      213: -788277021189813446
+    second: Titel - make me bake_0
   - first:
-      213: -4959585714381107485
-    second: Apfel_1
+      213: 2736555932904952001
+    second: Titel - make me bake_1
   - first:
-      213: -4263700794110927650
-    second: Apfel_2
+      213: 3893896142664314263
+    second: Titel - make me bake_2
   - first:
-      213: 2396212696657051601
-    second: Apfel_3
+      213: 1226428945272014804
+    second: Titel - make me bake_3
   - first:
-      213: 3321383878225530785
-    second: Apfel_4
+      213: 5279524278084558753
+    second: Titel - make me bake_4
   - first:
-      213: -6145816307172606147
-    second: Apfel_5
+      213: -3660803492486173010
+    second: Titel - make me bake_5
+  - first:
+      213: 9171598844344320675
+    second: Titel - make me bake_6
+  - first:
+      213: 6539525033371595724
+    second: Titel - make me bake_7
+  - first:
+      213: -8928596331261124307
+    second: Titel - make me bake_8
+  - first:
+      213: 6046095081348419764
+    second: Titel - make me bake_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +73,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -90,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -150,30 +162,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Apfel_0
+      name: Titel - make me bake_0
       rect:
         serializedVersion: 2
-        x: 196
-        y: 132
-        width: 738
-        height: 641
+        x: 212
+        y: 584
+        width: 116
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e1e4bc56f58f1a20800000000000000
-      internalID: 3035291967034810854
+      spriteID: a3bc067c93a7f05f0800000000000000
+      internalID: -788277021189813446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apfel_1
+      name: Titel - make me bake_1
       rect:
         serializedVersion: 2
-        x: 198
-        y: 368
-        width: 12
-        height: 26
+        x: 335
+        y: 582
+        width: 80
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ee463dd1130c2bb0800000000000000
-      internalID: -4959585714381107485
+      spriteID: 1c099c04f133af520800000000000000
+      internalID: 2736555932904952001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apfel_2
+      name: Titel - make me bake_2
       rect:
         serializedVersion: 2
-        x: 493
-        y: 120
-        width: 61
-        height: 40
+        x: 415
+        y: 581
+        width: 85
+        height: 132
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edc9772c7ba44d4c0800000000000000
-      internalID: -4263700794110927650
+      spriteID: 79d25c739e5e90630800000000000000
+      internalID: 3893896142664314263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apfel_3
+      name: Titel - make me bake_3
       rect:
         serializedVersion: 2
-        x: 519
-        y: 131
-        width: 9
-        height: 12
+        x: 503
+        y: 586
+        width: 71
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1df368e70ce014120800000000000000
-      internalID: 2396212696657051601
+      spriteID: 4d70239b0a6250110800000000000000
+      internalID: 1226428945272014804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apfel_4
+      name: Titel - make me bake_4
       rect:
         serializedVersion: 2
-        x: 529
-        y: 130
-        width: 9
-        height: 9
+        x: 615
+        y: 584
+        width: 116
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +264,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1af87503a0de71e20800000000000000
-      internalID: 3321383878225530785
+      spriteID: 1afd74adb53a44940800000000000000
+      internalID: 5279524278084558753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Apfel_5
+      name: Titel - make me bake_5
       rect:
         serializedVersion: 2
-        x: 549
-        y: 136
-        width: 10
-        height: 8
+        x: 733
+        y: 586
+        width: 71
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,8 +285,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3f7c2c61aca5baa0800000000000000
-      internalID: -6145816307172606147
+      spriteID: eae2add8e96323dc0800000000000000
+      internalID: -3660803492486173010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titel - make me bake_6
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 312
+        width: 129
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2c6834e80184f70800000000000000
+      internalID: 9171598844344320675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titel - make me bake_7
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 299
+        width: 184
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc373e5be5f01ca50800000000000000
+      internalID: 6539525033371595724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titel - make me bake_8
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 297
+        width: 173
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d21235441f0471480800000000000000
+      internalID: -8928596331261124307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Titel - make me bake_9
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 317
+        width: 169
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b05202617b08e350800000000000000
+      internalID: 6046095081348419764
       vertices: []
       indices: 
       edges: []
@@ -295,7 +378,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -303,12 +386,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Apfel_0: 3035291967034810854
-      Apfel_1: -4959585714381107485
-      Apfel_2: -4263700794110927650
-      Apfel_3: 2396212696657051601
-      Apfel_4: 3321383878225530785
-      Apfel_5: -6145816307172606147
+      Titel - make me bake_0: -788277021189813446
+      Titel - make me bake_1: 2736555932904952001
+      Titel - make me bake_2: 3893896142664314263
+      Titel - make me bake_3: 1226428945272014804
+      Titel - make me bake_4: 5279524278084558753
+      Titel - make me bake_5: -3660803492486173010
+      Titel - make me bake_6: 9171598844344320675
+      Titel - make me bake_7: 6539525033371595724
+      Titel - make me bake_8: -8928596331261124307
+      Titel - make me bake_9: 6046095081348419764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
