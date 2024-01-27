@@ -19,17 +19,18 @@ public class UICard : MonoBehaviour {
     public GameObject Wrong;
 
 
-    private void Awake() {
+    public void Prepare() {
         TargetImage = this.gameObject.GetComponent<Image>();
         TargetButton = this.gameObject.GetComponent<Button>();
         Clear();
     }
 
 
-    public void SetCard(Card card) {
+    public void SetCard(Card card, bool isCorrect=false) {
         this.UsedCard = card;
         this.TargetImage.sprite = card.CardImage;
-
+        CheckCorrect(isCorrect);
+        Debug.Log(isCorrect + " " + card.Type.Name);
     }
 
     public void Select() {
@@ -45,19 +46,21 @@ public class UICard : MonoBehaviour {
 
     }
 
-    public void CheckCorrect() {
-        if (UsedCard.Type.isCorrect) {
-            Correct.SetActive(true);
-            Wrong.SetActive(false);
-        } else {
-            Correct.SetActive(false);
-            Wrong.SetActive(true);
+    public void CheckCorrect(bool isCorrect) {
+        if (Wrong != null && Correct != null) {
+            if (isCorrect) {
+                Correct.SetActive(true);
+                Wrong.SetActive(false);
+            } else {
+                Correct.SetActive(false);
+                Wrong.SetActive(true);
+            }
         }
     }
 
     public void Clear() {
         Selected = false;
-        if (Wrong!=null) {
+        if (Wrong != null) {
             Wrong?.SetActive(false);
 
         }
