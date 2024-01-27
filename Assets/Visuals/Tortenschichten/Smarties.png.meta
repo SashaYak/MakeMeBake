@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 789dc7616f4d9044ba931b7bcc8bd669
+guid: 26d6605567e214ebd87661fed92eaa1f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -649346615513574950
-    second: BrainsPlate_0
+      213: 7325439588578805656
+    second: Smarties_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,30 +135,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BrainsPlate_0
+      name: Smarties_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 6
-        width: 498
-        height: 496
+        x: 76
+        y: 101
+        width: 852
+        height: 481
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad1163e81be0df6f0800000000000000
-      internalID: -649346615513574950
+      spriteID: 897c2d47e7039a560800000000000000
+      internalID: 7325439588578805656
       vertices: []
       indices: 
       edges: []
@@ -182,8 +169,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      BrainsPlate_0: -649346615513574950
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

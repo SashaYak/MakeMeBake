@@ -169,7 +169,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Card_Cigarette_0: 2279675267068810151
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
