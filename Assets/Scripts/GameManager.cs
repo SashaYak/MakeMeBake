@@ -4,6 +4,33 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
+
+    public Card[] Cards;
+
+    Dictionary<string, Card> cardDictionary;
+
+
+
+    private void Awake() {
+        if (Instance==null) {
+            Instance = this;
+        } else {
+            Destroy(this);
+        }
+        cardDictionary = new Dictionary<string, Card>();
+        foreach (Card card in Cards) {
+            cardDictionary.Add(card.Type.Name, card);
+        }
+    }
+
+
+    public Card GetCard(Ingredient ingredient) {
+        return cardDictionary[ingredient.Name];
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,16 +54,27 @@ public class GameManager : MonoBehaviour
     }
 
     public void SelectIngredient(Ingredient ingredient) {
-        Ingredients.Add(ingredient);
+        Ingredient newIngredient = ingredient.Copy();
+        Ingredients.Add(newIngredient);
     }
 
-    public void DeselectIngredient(Ingredient ingredient) {
-        Ingredients.Remove(ingredient);
+    public void DeselectIngredient(Ingredient selected) {
+        foreach (Ingredient ingredient in Ingredients) {
+            if (ingredient.IsEqual(selected)) {
+                Ingredients.Remove(ingredient);
+            }
+        }
     }
 
     #endregion
 
     #region Create List
+
+    public void StartListCreation() {
+        workingCake = null;
+        Ingredients.Clear();
+        //Show UI
+    }
 
     public List<Cake> Cakes = new List<Cake>();
     Cake workingCake;
@@ -57,6 +95,12 @@ public class GameManager : MonoBehaviour
 
     public Cake ActiveCake;
 
+    public void StartCakeCreation() {
+        PrepareCake();
+        Ingredients.Clear();
+        //UI?
+    }
+
     public void PrepareCake() {
         int rnd = Random.Range(0, Cakes.Count);
         SetActiveCake(Cakes[rnd]);
@@ -68,7 +112,7 @@ public class GameManager : MonoBehaviour
 
     public void CompareCake() {
         Cake currentCake = new Cake(Ingredients);
-        int errors = ActiveCake.Compare(currentCake);
+        int errors = currentCake.Compare(ActiveCake);
 
         if (errors==0) {
             // WIN
