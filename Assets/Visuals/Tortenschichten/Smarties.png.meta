@@ -169,7 +169,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Smarties_0: 7325439588578805656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

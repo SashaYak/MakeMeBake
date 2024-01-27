@@ -8,7 +8,10 @@ public class Cake {
     public string Name;
 
     public Cake(List<Ingredient> ingredients) {
-        Ingredients = ingredients;
+        Ingredients = new List<Ingredient>();
+        for (int i = 0; i < ingredients.Count; i++) {
+            Ingredients.Add(ingredients[i].Copy());
+        }
     }
 
     public int NumberOfIngredients {
