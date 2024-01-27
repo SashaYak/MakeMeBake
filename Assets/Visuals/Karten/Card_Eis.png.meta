@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 67e1f667546b70949aa637f5a958ea29
+guid: 22738fa5c53ec494baa276d927022b61
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9094856805351541040
-    second: AppleProducts_0
+      213: -1384139193784428285
+    second: Card_Eis_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,29 +135,16 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AppleProducts_0
+      name: Card_Eis_0
       rect:
         serializedVersion: 2
         x: 9
         y: 6
-        width: 503
+        width: 498
         height: 496
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 039c50ee31c673e70800000000000000
-      internalID: 9094856805351541040
+      spriteID: 30998ca9cbc8acce0800000000000000
+      internalID: -1384139193784428285
       vertices: []
       indices: 
       edges: []
@@ -182,8 +169,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      AppleProducts_0: 9094856805351541040
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

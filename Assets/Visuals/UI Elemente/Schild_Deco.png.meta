@@ -169,7 +169,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Schild_Deco_0: -5970101441569859215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

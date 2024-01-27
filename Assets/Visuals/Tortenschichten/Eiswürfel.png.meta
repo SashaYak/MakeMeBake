@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 67e1f667546b70949aa637f5a958ea29
+guid: b2e91edd152ef4b959e83af6af138d92
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9094856805351541040
-    second: AppleProducts_0
+      213: 3693106307581890594
+    second: "Eiswu\u0308rfel_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,30 +135,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AppleProducts_0
+      name: "Eiswu\u0308rfel_0"
       rect:
         serializedVersion: 2
-        x: 9
-        y: 6
-        width: 503
-        height: 496
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 039c50ee31c673e70800000000000000
-      internalID: 9094856805351541040
+      spriteID: 2205c2dae9c804330800000000000000
+      internalID: 3693106307581890594
       vertices: []
       indices: 
       edges: []
@@ -183,7 +170,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AppleProducts_0: 9094856805351541040
+      "Eiswu\u0308rfel_0": 3693106307581890594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour {
     public UIScreen[] Screens;
 
     public UICard[] SelectionCards;
+    public UICard[] GuessingCards;
 
     public Baker Baker;
 
@@ -20,6 +21,8 @@ public class UIManager : MonoBehaviour {
     public Button[] NextButtons;
 
     public TMP_InputField TextInput;
+
+    public TMP_Text CakeName;
 
     List<UIScreen> activeScreens = new List<UIScreen>();
     Dictionary<ScreenName, UIScreen> usedScreens;
@@ -85,10 +88,20 @@ public class UIManager : MonoBehaviour {
         foreach (UICard card in SelectionCards) {
             card.Clear();
         }
-        TextInput.text = "";
-
+        foreach (UICard card in GuessingCards) {
+            card.Clear();
+        }
     }
 
+    public void ClearTextInput() {
+        TextInput.text = "";
+    }
+
+
+    public void SetCakeName(string cakeName) {
+        CakeName.text = cakeName;
+        Debug.Log(cakeName);
+    }
 
     public void AllowNext(bool allowed=false) {
         foreach (Button button in NextButtons) {
@@ -111,7 +124,7 @@ public class UIScreen {
 public enum ScreenName {
     empty,
     StartScreen,
-    Endscreen,
+    TitleScreen,
     Credits,
     Player1ScreenPrepare,
     Player1ScreenName,
