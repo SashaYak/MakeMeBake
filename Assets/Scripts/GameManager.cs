@@ -4,6 +4,33 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
+
+    public Card[] Cards;
+
+    Dictionary<string, Card> cardDictionary;
+
+
+
+    private void Awake() {
+        if (Instance==null) {
+            Instance = this;
+        } else {
+            Destroy(this);
+        }
+        cardDictionary = new Dictionary<string, Card>();
+        foreach (Card card in Cards) {
+            cardDictionary.Add(card.Type.Name, card);
+        }
+    }
+
+
+    public Card GetCard(Ingredient ingredient) {
+        return cardDictionary[ingredient.Name];
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,15 +54,13 @@ public class GameManager : MonoBehaviour
     }
 
     public void SelectIngredient(Ingredient ingredient) {
-        Ingredient newIngredient = new Ingredient();
-        newIngredient.Name = ingredient.Name;
-        newIngredient.isCorrect = false;
+        Ingredient newIngredient = ingredient.Copy();
         Ingredients.Add(newIngredient);
     }
 
     public void DeselectIngredient(Ingredient selected) {
         foreach (Ingredient ingredient in Ingredients) {
-            if (ingredient.Name==selected.Name) {
+            if (ingredient.IsEqual(selected)) {
                 Ingredients.Remove(ingredient);
             }
         }

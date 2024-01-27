@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
     public UIScreen[] Screens;
+
+    public UICard[] SelectionCards;
+
+    public Baker Baker;
+
 
     List<UIScreen> activeScreens = new List<UIScreen>();
     Dictionary<ScreenName, UIScreen> usedScreens = new Dictionary<ScreenName, UIScreen>();
@@ -54,7 +60,7 @@ public class UIScreen {
     public ScreenName Name;
     public GameObject[] ScreenElements;
     public ScreenName ParentScreen = ScreenName.empty;
-
+    
 
 }
 
