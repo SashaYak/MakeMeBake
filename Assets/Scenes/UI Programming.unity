@@ -769,7 +769,7 @@ MonoBehaviour:
       Name: Fisch
       isCorrect: 0
     CardImage: {fileID: 3799050770485447629, guid: 38d372a5ee7814c18824eb6ea3992170, type: 3}
-    CakeImage: {fileID: 3799050770485447629, guid: 38d372a5ee7814c18824eb6ea3992170, type: 3}
+    CakeImage: {fileID: 1861778244092751849, guid: 5807033616722894e8d6764596059538, type: 3}
     Bottom: 0
     Top: 0
     Height: 0
@@ -777,7 +777,7 @@ MonoBehaviour:
       Name: Mickey
       isCorrect: 0
     CardImage: {fileID: 5257805140796753349, guid: 8777ba16cf9100945b210698ff62b5f2, type: 3}
-    CakeImage: {fileID: 5257805140796753349, guid: 8777ba16cf9100945b210698ff62b5f2, type: 3}
+    CakeImage: {fileID: -5023120539748756173, guid: 568fa9bd6e4f84c9aaee60d894910c31, type: 3}
     Bottom: 0
     Top: 0
     Height: 0
@@ -785,7 +785,7 @@ MonoBehaviour:
       Name: Smoke
       isCorrect: 0
     CardImage: {fileID: 2828077047651648745, guid: ae775d2a7c69146bb81c6300db65d1bd, type: 3}
-    CakeImage: {fileID: 2828077047651648745, guid: ae775d2a7c69146bb81c6300db65d1bd, type: 3}
+    CakeImage: {fileID: 2828077047651648745, guid: 50964933ca9996c438100b557307abdc, type: 3}
     Bottom: 0
     Top: 0
     Height: 0
@@ -793,7 +793,7 @@ MonoBehaviour:
       Name: Apple
       isCorrect: 0
     CardImage: {fileID: 9094856805351541040, guid: 67e1f667546b70949aa637f5a958ea29, type: 3}
-    CakeImage: {fileID: 9094856805351541040, guid: 67e1f667546b70949aa637f5a958ea29, type: 3}
+    CakeImage: {fileID: 3035291967034810854, guid: 45b49463c8b33ca4297e29c71bd206d6, type: 3}
     Bottom: 0
     Top: 0
     Height: 0
@@ -801,7 +801,7 @@ MonoBehaviour:
       Name: Eis
       isCorrect: 0
     CardImage: {fileID: -1384139193784428285, guid: 22738fa5c53ec494baa276d927022b61, type: 3}
-    CakeImage: {fileID: -1384139193784428285, guid: 22738fa5c53ec494baa276d927022b61, type: 3}
+    CakeImage: {fileID: 3693106307581890594, guid: b2e91edd152ef4b959e83af6af138d92, type: 3}
     Bottom: 0
     Top: 0
     Height: 0
@@ -809,23 +809,23 @@ MonoBehaviour:
       Name: Brains
       isCorrect: 0
     CardImage: {fileID: -649346615513574950, guid: 789dc7616f4d9044ba931b7bcc8bd669, type: 3}
-    CakeImage: {fileID: -649346615513574950, guid: 789dc7616f4d9044ba931b7bcc8bd669, type: 3}
+    CakeImage: {fileID: 7325439588578805656, guid: 26d6605567e214ebd87661fed92eaa1f, type: 3}
     Bottom: 0
     Top: 0
     Height: 0
   - Type:
-      Name: 6
+      Name: Grey
       isCorrect: 0
-    CardImage: {fileID: -4858976890534067818, guid: dfb700cabc2e94719b383e63948ea13e, type: 3}
-    CakeImage: {fileID: -4858976890534067818, guid: dfb700cabc2e94719b383e63948ea13e, type: 3}
+    CardImage: {fileID: 8639952686215271447, guid: 952ade8af459d482a98de2af6d639064, type: 3}
+    CakeImage: {fileID: 2279675267068810151, guid: 9df13a1d7a38a459ab4d6aacbe7da080, type: 3}
     Bottom: 0
     Top: 0
     Height: 0
   - Type:
       Name: 7
       isCorrect: 0
-    CardImage: {fileID: -4858976890534067818, guid: dfb700cabc2e94719b383e63948ea13e, type: 3}
-    CakeImage: {fileID: -4858976890534067818, guid: dfb700cabc2e94719b383e63948ea13e, type: 3}
+    CardImage: {fileID: -1340131049515782738, guid: 6597591e11092f24798627cbc741023a, type: 3}
+    CakeImage: {fileID: -7292831605154967902, guid: c08be2eac42d05145855b9b245bf00f0, type: 3}
     Bottom: 0
     Top: 0
     Height: 0
@@ -10584,7 +10584,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1342746003
 RectTransform:
   m_ObjectHideFlags: 0

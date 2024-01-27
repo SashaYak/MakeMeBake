@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
             cardDictionary.Add(card.Type.Name, card);
         }
 
-        Cakes = new List<Cake>();
+        //Cakes = new List<Cake>();
     }
 
 

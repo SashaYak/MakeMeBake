@@ -46,6 +46,7 @@ public class UIManager : MonoBehaviour {
 
         foreach (UIScreen screen in Screens) {
             usedScreens.Add(screen.Name, screen);
+            activeScreens.Add(screen);
         }
 
         ActivateScreen(2);
