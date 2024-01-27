@@ -15,6 +15,12 @@ public class UIManager : MonoBehaviour {
     public UICard[] SelectionCards;
     public UICard[] GuessingCards;
 
+
+    public UICard[] ChosenCards;
+    public UICard[] ResultCards;
+
+
+
     public Baker Baker;
 
 
@@ -23,6 +29,7 @@ public class UIManager : MonoBehaviour {
     public TMP_InputField TextInput;
 
     public TMP_Text CakeName;
+    public TMP_Text CakeName2;
 
     List<UIScreen> activeScreens = new List<UIScreen>();
     Dictionary<ScreenName, UIScreen> usedScreens;
@@ -46,7 +53,13 @@ public class UIManager : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-
+        Card[] cards = GameManager.Instance.Cards;
+        for (int i = 0; i < cards.Length; i++) {
+            SelectionCards[i].Prepare();
+            SelectionCards[i].SetCard(cards[i]);
+            GuessingCards[i].Prepare();
+            GuessingCards[i].SetCard(cards[i]);
+        }
     }
 
     // Update is called once per frame
@@ -93,6 +106,23 @@ public class UIManager : MonoBehaviour {
         }
     }
 
+
+    public void SetChosenCards(Cake cake) {
+        for (int i = 0; i < ChosenCards.Length; i++) {
+            ChosenCards[i].Prepare();
+            ChosenCards[i].SetCard(GameManager.Instance.GetCard(cake.Ingredients[i]));
+        }
+    }
+
+
+    public void SetResultCards(Cake cake) {
+        for (int i = 0; i < ResultCards.Length; i++) {
+            ResultCards[i].Prepare();
+            ResultCards[i].SetCard(GameManager.Instance.GetCard(cake.Ingredients[i]), cake.Ingredients[i].isCorrect);
+        }
+    }
+
+
     public void ClearTextInput() {
         TextInput.text = "";
     }
@@ -100,6 +130,7 @@ public class UIManager : MonoBehaviour {
 
     public void SetCakeName(string cakeName) {
         CakeName.text = cakeName;
+        CakeName2.text = cakeName;
         Debug.Log(cakeName);
     }
 
