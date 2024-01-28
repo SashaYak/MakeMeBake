@@ -34,14 +34,30 @@ public class UICard : MonoBehaviour {
     }
 
     public void Select() {
-        Selected = !Selected;
-        if (SelectedIndicator != null) {
-            SelectedIndicator.SetActive(Selected);
+
+        if (!Selected && GameManager.Instance.GetIngridientsCount() > 2)
+        {
+            // Can't choose more ingridients
+            SoundManager.PlayBackSound();
         }
-        if (Selected) {
-            GameManager.Instance.SelectIngredient(UsedCard.Type);
-        } else {
-            GameManager.Instance.DeselectIngredient(UsedCard.Type);
+        else
+
+        {
+            Selected = !Selected;
+            if (SelectedIndicator != null)
+            {
+                SelectedIndicator.SetActive(Selected);
+            }
+            if (Selected)
+            {
+                GameManager.Instance.SelectIngredient(UsedCard.Type);
+                SoundManager.PlayTakeCardSound();
+            }
+            else
+            {
+                GameManager.Instance.DeselectIngredient(UsedCard.Type);
+                SoundManager.PlayBackSound();
+            }
         }
 
     }

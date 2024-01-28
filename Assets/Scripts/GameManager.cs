@@ -82,6 +82,10 @@ public class GameManager : MonoBehaviour
             UIManager.Instance.AllowNext(false);
         }
     }
+    public int GetIngridientsCount() 
+    {
+        return Ingredients.Count;
+    }
 
     public void DeselectIngredient(Ingredient selected) {
         List<Ingredient> ingredientsToRemove = new List<Ingredient>();
@@ -184,6 +188,9 @@ public class GameManager : MonoBehaviour
     public Cake currentCake;
 
     public void CompareCake() {
+
+        
+
         currentCake = new Cake(Ingredients);
 
         UIManager.Instance.BakeCake(currentCake);
@@ -194,12 +201,17 @@ public class GameManager : MonoBehaviour
 
         if (errors==0) {
             // WIN
+            SoundManager.PlayWinSound();
+            UIManager.Instance.SetPun(true);
         } else {
             //  X errors
+            SoundManager.PlayloseSound();
+            UIManager.Instance.SetPun(false);
         }
     }
 
     #endregion
 
+    
 
 }
