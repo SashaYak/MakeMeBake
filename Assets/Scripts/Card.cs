@@ -9,24 +9,34 @@ public class Card {
     public Sprite CardImage;
     public Sprite CakeImage;
 
-    public BottomType Bottom;
-    public TopType Top;
-    public HeightType Height;
+    public PositionType Bottom;
+    public PositionType Top;
+    public PositionType HeightBottom;
+    public PositionType HeightTop;
 
 
     public float BottomDistance() {
         return bottomDistance(Bottom);
     }
 
-    static float bottomDistance(BottomType type) {
+    static float bottomDistance(PositionType type) {
         float returnValue = 0;
 
         switch (type) {
-            case BottomType.left:
+            case PositionType.zero:
+                returnValue = -150f;
                 break;
-            case BottomType.middle:
+            case PositionType.one:
+                returnValue = -75f;
                 break;
-            case BottomType.right:
+            case PositionType.two:
+                returnValue = 0f;
+                break;
+            case PositionType.three:
+                returnValue = 75f;
+                break;
+            case PositionType.four:
+                returnValue = 150f;
                 break;
             default:
                 break;
@@ -36,18 +46,34 @@ public class Card {
     }
 
     public float TopDistance() {
-        return topDistance(Top);
+        return bottomDistance(Top);
+    }
+ 
+
+    public float HeightBottomDistance() {
+       return heightBottomDistance(HeightBottom);
     }
 
-    static float topDistance(TopType type) {
+    static float heightBottomDistance(PositionType type)
+    {
         float returnValue = 0;
 
-        switch (type) {
-            case TopType.left:
+        switch (type)
+        {
+            case PositionType.zero:
+                returnValue = 0f;
                 break;
-            case TopType.middle:
+            case PositionType.one:
+                returnValue = -50f;
                 break;
-            case TopType.right:
+            case PositionType.two:
+                returnValue = -150f;
+                break;
+            case PositionType.three:
+                returnValue = -250f;
+                break;
+            case PositionType.four:
+                returnValue = -300f;
                 break;
             default:
                 break;
@@ -56,19 +82,32 @@ public class Card {
         return returnValue;
     }
 
-    public float HeightDistance() {
-        return heightDistance(Height);
-    }
 
-    static float heightDistance(HeightType type) {
+
+    public float HeightTopDistance()
+    {
+        return heightTopDistance(HeightTop);
+    }
+    static float heightTopDistance(PositionType type)
+    {
         float returnValue = 0;
 
-        switch (type) {
-            case HeightType.zero:
+        switch (type)
+        {
+            case PositionType.zero:
+                returnValue = 0f;
                 break;
-            case HeightType.medium:
+            case PositionType.one:
+                returnValue = 50f;
                 break;
-            case HeightType.high:
+            case PositionType.two:
+                returnValue = 150f;
+                break;
+            case PositionType.three:
+                returnValue = 250f;
+                break;
+            case PositionType.four:
+                returnValue = 300f;
                 break;
             default:
                 break;
@@ -79,20 +118,12 @@ public class Card {
 
 }
 
-public enum BottomType {
-    left, 
-    middle,
-    right
-}
 
-public enum TopType {
-    left,
-    middle,
-    right
-}
-
-public enum HeightType {
+public enum PositionType
+{
     zero,
-    medium,
-    high
+    one,
+    two, 
+    three,
+    four
 }

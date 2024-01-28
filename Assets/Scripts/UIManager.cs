@@ -31,6 +31,7 @@ public class UIManager : MonoBehaviour {
     public TMP_Text CakeName;
     public TMP_Text CakeName2;
 
+
     List<UIScreen> activeScreens = new List<UIScreen>();
     Dictionary<ScreenName, UIScreen> usedScreens;
 
@@ -136,10 +137,16 @@ public class UIManager : MonoBehaviour {
         Debug.Log(cakeName);
     }
 
+
     public void AllowNext(bool allowed=false) {
         foreach (Button button in NextButtons) {
             button.interactable = allowed;
         }
+    }
+
+    public void BakeCake(Cake cake) 
+    {
+        Baker.BakeCake(cake);
     }
 }
 

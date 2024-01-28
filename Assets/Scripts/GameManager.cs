@@ -161,12 +161,14 @@ public class GameManager : MonoBehaviour
 
     public Cake ActiveCake;
 
-    public void StartCakeCreation() {
-        prepareCake();
+    public void StartCakeCreation() {      
+        prepareCake();        
         Ingredients.Clear();
-        //UI?
-    }
+        
 
+
+    }
+     
     void prepareCake() {
         int rnd = Random.Range(0, Cakes.Count);
         SetActiveCake(Cakes[rnd]);
@@ -183,6 +185,9 @@ public class GameManager : MonoBehaviour
 
     public void CompareCake() {
         currentCake = new Cake(Ingredients);
+
+        UIManager.Instance.BakeCake(currentCake);
+
         int errors = currentCake.Compare(ActiveCake);
 
         UIManager.Instance.SetResultCards(currentCake);

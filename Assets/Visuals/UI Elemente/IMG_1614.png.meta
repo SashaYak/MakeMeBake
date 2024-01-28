@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 9df13a1d7a38a459ab4d6aacbe7da080
+guid: b9f4e8a5379d6a249b74a0728a10ecc7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2279675267068810151
-    second: Card_Cigarette_0
+      213: -8246497658288747265
+    second: IMG_1614_0
+  - first:
+      213: -4162483111835407599
+    second: IMG_1614_1
+  - first:
+      213: 7669711814695575706
+    second: IMG_1614_2
+  - first:
+      213: -1814632220324825851
+    second: IMG_1614_3
+  - first:
+      213: -6003316811392968895
+    second: IMG_1614_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -152,13 +164,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Card_Cigarette_0
+      name: IMG_1614_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 384
+        y: 794
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +178,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a351e0c39803af10800000000000000
-      internalID: 2279675267068810151
+      spriteID: ffccb94521e8e8d80800000000000000
+      internalID: -8246497658288747265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_1614_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 402
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bec7fd9a3eb36c0800000000000000
+      internalID: -4162483111835407599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_1614_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 284
+        width: 571
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90eb84724a407a60800000000000000
+      internalID: 7669711814695575706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_1614_3
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 397
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5057f852c9121d6e0800000000000000
+      internalID: -1814632220324825851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_1614_4
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 258
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1479aceba2fefaca0800000000000000
+      internalID: -6003316811392968895
       vertices: []
       indices: 
       edges: []
@@ -175,15 +271,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Card_Cigarette_0: 2279675267068810151
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
