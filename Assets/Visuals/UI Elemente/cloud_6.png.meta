@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: b9f4e8a5379d6a249b74a0728a10ecc7
+guid: 01d809c527eb74b8782d1a5f6afcf00a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8246497658288747265
-    second: IMG_1614_0
+      213: -6255156232321822357
+    second: cloud_6_0
   - first:
-      213: -4162483111835407599
-    second: IMG_1614_1
+      213: -5529326025394710507
+    second: cloud_6_1
   - first:
-      213: 7669711814695575706
-    second: IMG_1614_2
-  - first:
-      213: -1814632220324825851
-    second: IMG_1614_3
-  - first:
-      213: -6003316811392968895
-    second: IMG_1614_4
+      213: -6486299787663280446
+    second: cloud_6_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -147,30 +141,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_1614_0
+      name: cloud_6_0
       rect:
         serializedVersion: 2
-        x: 384
-        y: 794
-        width: 15
-        height: 15
+        x: 162
+        y: 373
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,41 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ffccb94521e8e8d80800000000000000
-      internalID: -8246497658288747265
+      spriteID: b6113e54c883139a0800000000000000
+      internalID: -6255156232321822357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1614_1
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 402
-        width: 40
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 11bec7fd9a3eb36c0800000000000000
-      internalID: -4162483111835407599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IMG_1614_2
+      name: cloud_6_1
       rect:
         serializedVersion: 2
         x: 225
-        y: 284
-        width: 571
-        height: 504
+        y: 273
+        width: 547
+        height: 534
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,40 +180,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a90eb84724a407a60800000000000000
-      internalID: 7669711814695575706
+      spriteID: 51896098643e343b0800000000000000
+      internalID: -5529326025394710507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1614_3
+      name: cloud_6_2
       rect:
         serializedVersion: 2
-        x: 790
-        y: 397
-        width: 52
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5057f852c9121d6e0800000000000000
-      internalID: -1814632220324825851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IMG_1614_4
-      rect:
-        serializedVersion: 2
-        x: 589
-        y: 258
-        width: 16
+        x: 831
+        y: 369
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -262,8 +201,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1479aceba2fefaca0800000000000000
-      internalID: -6003316811392968895
+      spriteID: 2c673a185b80cf5a0800000000000000
+      internalID: -6486299787663280446
       vertices: []
       indices: 
       edges: []
@@ -271,14 +210,17 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cloud_6_0: -6255156232321822357
+      cloud_6_1: -5529326025394710507
+      cloud_6_2: -6486299787663280446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

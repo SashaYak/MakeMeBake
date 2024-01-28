@@ -182,7 +182,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Card_Wedding_0: -7594672793608124052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

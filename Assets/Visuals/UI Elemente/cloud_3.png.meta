@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 81b7a264ff26e9344add57c565271d63
+guid: 51e0ec720c9534b2b9e990fe21b2b1e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2608903245981360508
-    second: IMG_1620_0
+      213: 4537315642309122741
+    second: cloud_3_0
   - first:
-      213: 2509630179382418349
-    second: IMG_1620_1
+      213: 976295378211854831
+    second: cloud_3_1
+  - first:
+      213: 3939746287981964253
+    second: cloud_3_2
+  - first:
+      213: 5009950584942106985
+    second: cloud_3_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -138,30 +144,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_1620_0
+      name: cloud_3_0
       rect:
         serializedVersion: 2
-        x: 210
-        y: 588
-        width: 25
-        height: 33
+        x: 252
+        y: 282
+        width: 533
+        height: 504
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48edae102505bcbd0800000000000000
-      internalID: -2608903245981360508
+      spriteID: 5ba98a57988c7fe30800000000000000
+      internalID: 4537315642309122741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1620_1
+      name: cloud_3_1
       rect:
         serializedVersion: 2
-        x: 228
-        y: 272
-        width: 526
-        height: 525
+        x: 391
+        y: 784
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +183,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dab50bff95ff3d220800000000000000
-      internalID: 2509630179382418349
+      spriteID: fe95c2e497f7c8d00800000000000000
+      internalID: 976295378211854831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_3_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 413
+        width: 60
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb2450106acca630800000000000000
+      internalID: 3939746287981964253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_3_3
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 410
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9691cbd538be68540800000000000000
+      internalID: 5009950584942106985
       vertices: []
       indices: 
       edges: []
@@ -199,14 +234,18 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cloud_3_0: 4537315642309122741
+      cloud_3_1: 976295378211854831
+      cloud_3_2: 3939746287981964253
+      cloud_3_3: 5009950584942106985
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

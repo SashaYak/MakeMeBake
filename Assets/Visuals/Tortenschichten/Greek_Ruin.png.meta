@@ -182,7 +182,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Greek_Ruin_0: 6275346745158558660
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

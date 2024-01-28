@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 9a70bdf097029de4888bc693a1e40ac3
+guid: 27be822817b8d497aa729602f2c5aa7b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6792197873936355464
-    second: IMG_1613_0
+      213: -2370070228398557351
+    second: cloud_7_0
   - first:
-      213: -3353260123647963008
-    second: IMG_1613_1
+      213: 1205570103965096601
+    second: cloud_7_1
   - first:
-      213: 8700725468658736328
-    second: IMG_1613_2
+      213: -3032759298816844677
+    second: cloud_7_2
   - first:
-      213: 2814205546096979336
-    second: IMG_1613_3
+      213: -8526257256348343158
+    second: cloud_7_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -144,30 +144,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_1613_0
+      name: cloud_7_0
       rect:
         serializedVersion: 2
-        x: 252
-        y: 282
-        width: 533
-        height: 504
+        x: 223
+        y: 286
+        width: 542
+        height: 514
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87f2cdf25044db1a0800000000000000
-      internalID: -6792197873936355464
+      spriteID: 95733973fa1db1fd0800000000000000
+      internalID: -2370070228398557351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1613_1
+      name: cloud_7_1
       rect:
         serializedVersion: 2
-        x: 391
-        y: 784
-        width: 14
-        height: 14
+        x: 443
+        y: 799
+        width: 21
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0801b721fa3d671d0800000000000000
-      internalID: -3353260123647963008
+      spriteID: 99a9ba64f9b0bb010800000000000000
+      internalID: 1205570103965096601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1613_2
+      name: cloud_7_2
       rect:
         serializedVersion: 2
-        x: 177
-        y: 413
-        width: 60
-        height: 73
+        x: 201
+        y: 650
+        width: 36
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8cc199f17bf2fb870800000000000000
-      internalID: 8700725468658736328
+      spriteID: b7c52c86c7979e5d0800000000000000
+      internalID: -3032759298816844677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1613_3
+      name: cloud_7_3
       rect:
         serializedVersion: 2
-        x: 784
-        y: 410
-        width: 49
-        height: 49
+        x: 573
+        y: 259
+        width: 37
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,8 +225,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88d6b0ca8011e0720800000000000000
-      internalID: 2814205546096979336
+      spriteID: a84a2cb0336aca980800000000000000
+      internalID: -8526257256348343158
       vertices: []
       indices: 
       edges: []
@@ -247,14 +234,18 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cloud_7_0: -2370070228398557351
+      cloud_7_1: 1205570103965096601
+      cloud_7_2: -3032759298816844677
+      cloud_7_3: -8526257256348343158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
