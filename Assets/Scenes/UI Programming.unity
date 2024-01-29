@@ -885,7 +885,7 @@ MonoBehaviour:
       isCorrect: 0
   - Name: Ancient Mother Gadget
     Ingredients:
-    - Name: Madonne
+    - Name: Madonna
       isCorrect: 0
     - Name: Apple
       isCorrect: 0
@@ -913,7 +913,7 @@ MonoBehaviour:
       isCorrect: 0
     - Name: Eis
       isCorrect: 0
-    - Name: Madonne
+    - Name: Madonna
       isCorrect: 0
   - Name: Fishy Gay Love
     Ingredients:
